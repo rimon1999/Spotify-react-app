@@ -1,38 +1,205 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary-green: #23ac53;
+  --primary-black: #070606;
+  --accent-blue: #13b5eb;
+  --accent-purple: #9d36c9;
+  --accent-pink: #e7579f;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: var(--primary-black);
+  color: white;
+  font-family: "Open Sans", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1,
+h2,
+h3{
+  font-family: "Circular", sans-serif;
+  font-weight: bold;
+}
+
+a {
+  color: var(--accent-pink);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-purple);
+}
+
+button {
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
+  border-radius: 24px;
+  padding: 8px 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--accent-blue);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: var(--primary-green);
+  color: white;
+  font-size: 18px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav li {
+  margin-right: 16px;
+  list-style: none;
+}
+
+.nav li:last-child {
+  margin-right: 0;
+}
+
+.hero {
+  background-image: url("https://img.freepik.com/free-vector/musical-notes-with-sound-wave-background_1017-32863.jpg?w=2000");
+  background-size: cover;
+  height: 600px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.hero h1 {
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 64px;
+}
+
+.cta p {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.cta button {
+  margin-top: 16px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+}
+
+.feature {
+  flex-basis: calc(35% -- 16px);
+  background-color: var(--primary-green);
   color: white;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.feature h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.feature p {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.footer {
+  background-color: var(--primary-black);
+  color: white;
+  padding: 32px;
+  text-align: center;
+  font-size: 16px;
+}
+
+#form {
+
+  text-align: right;
+  margin: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+#greencenter {
+  text-align: center;
+  color: #1DB954;
+}
+
+#center {
+  text-align: center;
+}
+
+#marginbottom {
+  margin-bottom: 20px;
+}
+
+#centermargin {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#centermargintop {
+  text-align: center;
+  margin-top: 25px;
+}
+
+#centermargintopandbot {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 23px;
+}
+
+#button {
+  background-color: #1DB954;
+}
+
+#marginleftandright {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.card {
+  background: black;
+  padding: 10px;
+  text-align: center;
+}
+
+#alignleft {
+  text-align: left;
 }
