@@ -1,4 +1,4 @@
-# Spotify Clone Web App
+# Spotify Clone React App
 
 ## Overview
 Spotify Clone App is a web application built with React, allowing users to explore and enjoy music. You can search for favorite albums and artists, save them as favorites, and discover new genres. The app is designed to be user-friendly and responsive on various devices.
